@@ -1,0 +1,70 @@
+@font-face {
+  src: url(../vendor/InterDisplay-Regular.woff2);
+  font-family: 'Inter';
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(../vendor/InterDisplay-Bold.woff2);
+  font-family: 'Inter';
+  font-weight: 600;
+}
+
+@font-face {
+  src: url(../vendor/InterDisplay-Black.woff2);
+  font-family: 'Inter';
+  font-weight: 900;
+}
+
+.page {
+  background-color: #2a2c2f;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  width: 92.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 28px;
+  margin: 0 auto;
+}
+
+.logo__image {
+  height: 52px;
+}
+
+.language-switcher__option {
+  position: relative;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 18px;
+}
+
+.language-switcher__option::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: all .2s;
+  transform: translate(-50%);
+}
+
+.language-switcher__option_active::after {
+  width: 100%;
+}
+
+.language-switcher__option:last-of-type {
+  margin-right: 0;
+}
