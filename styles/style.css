@@ -47,6 +47,10 @@
   margin: 0 auto 92px;
 }
 
+.page__footer {
+  margin: 0 auto;
+}
+
 .header {
   width: 92.5%;
   max-width: 1184px;
@@ -317,4 +321,40 @@
   text-decoration: none;
   text-align: center;
   margin: 0 auto;
+}
+
+.footer {
+  width: 92.5%;
+  max-width: 1184px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.footer__menu {
+  display: flex;
+  align-items: center;
+}
+
+.footer__link {
+  font-size: 16px;
+  line-height: 1.125;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 18px;
+  transition: all .25s;
+}
+
+.footer__link:last-of-type {
+  margin-right: 0;
+}
+
+.footer__link:hover {
+  opacity: 0.6;
+}
+
+.footer__author {
+  font-size: 14px;
+  line-height: 1.15;
 }
